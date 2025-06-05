@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Device Redirect</title>
+  <script>
+    if (/android/i.test(navigator.userAgent)) {
+      window.location = "https://play.google.com/store/apps/details?id=com.dts.freefireth";
+    } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location = "https://apps.apple.com/app/id1300146617";
+    } else {
+      window.location = "https://freefire.garena.com"; // fallback
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting based on your device...</p>
+</body>
+</html>
